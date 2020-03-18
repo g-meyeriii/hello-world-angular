@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'hello-world-angular';
+  title = 'Angular 9';
+  name: string = "no name yet!";
+  h1Color: string = "red";
+  isHidden: boolean = false;
+
+  setName(): void{
+    this.name = "George";
+  }
+  toggleColor(): void{
+    this.h1Color = (this.h1Color == "red") ? "blue" : "red";
+  }
+  flipHidden():void{
+    this.isHidden=!this.isHidden;
+  }
 }
