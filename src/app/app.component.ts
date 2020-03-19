@@ -10,6 +10,16 @@ export class AppComponent {
   name: string = "no name yet!";
   h1Color: string = "red";
   isHidden: boolean = false;
+  txtValue: string = 'Initial value';
+  showDiv: boolean = false;
+  names: string[] = [
+    "Anna","Bill","Chris","Dean", "Aaron"
+  ];
+
+  setTxtValue(val:string): void {
+    this.txtValue = val;
+  }
+
 
   setName(): void{
     this.name = "George";
