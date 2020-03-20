@@ -1,14 +1,29 @@
 <div>
-  <button (click)="setName();">Change name</button>
+  <div>
+    <table class="table table-sm">
+      <tr>
+        <th>id</th>
+        <th>name</th>
+
+      </tr>
+
+      <tr *ngFor="let user of users">
+        <td>{{user.id}}</td>
+        <td>{{user.firstName}} {{user.lastName}}</td>
+      </tr>
+
+    </table>
+  </div>
+  <!-- <button (click)="setName();">Change name</button>
   <button (click)="toggleColor()">Toggle Color</button>
   <button (click)="flipHidden()">Flip Hidden</button>
   <h1 [hidden]="isHidden" [style.Color]="h1Color">
     {{title}} is my first Angular app. My name is {{name}}.
   </h1>
   <div *ngIf="showDiv==true">
-    <input [(ngModel)]= "txtValue" type="text">
-      <label>{{txtValue}}</label>
-      <button (click)="setTxtValue('WTE!');">WTE!</button>
+    <input [(ngModel)]="txtValue" type="text">
+    <label>{{txtValue}}</label>
+    <button (click)="setTxtValue('WTE!');">WTE!</button>
   </div>
   <div>
     <ol>
@@ -16,5 +31,5 @@
         <span>Name is {{name}}</span>
       </li>
     </ol>
-  </div>
+  </div> -->
 </div>
