@@ -30,6 +30,10 @@ export class AppComponent implements OnInit {
     h1Color:string ="red";
     isHidden:boolean =false;
     txtValue:string ='Intial value';
+    showDiv:boolean = false;
+    names: string[] =[
+      "Anna","Bill","Chris","Dean","Erin"
+    ];
     
   setTxtValue(val:string): void {
     this.txtValue = val;
